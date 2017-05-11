@@ -20,4 +20,9 @@ else
 	cd /vagrant/
 	tar -xzvf hab-0.22.1-20170509234454-x86_64-linux.tar.gz
 	mv hab-0.22.1-20170509234454-x86_64-linux/hab /usr/local/bin/
+
 fi
+
+chmod a+x /usr/local/bin/hab
+#Not sure about this. However, to run as root, it needs to be here or I need to fix root's path. 
+cp /usr/local/bin/hab /usr/bin/
