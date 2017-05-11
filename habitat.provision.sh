@@ -29,3 +29,6 @@ echo 'hab            ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers
 chmod a+x /usr/local/bin/hab
 #Not sure about this. However, to run as root, it needs to be here or I need to fix root's path. 
 cp /usr/local/bin/hab /usr/bin/
+echo "Run as 'hab' user with 'sudo'."
+echo "sudo su - hab"
+echo "sudo hab start core/redis"
